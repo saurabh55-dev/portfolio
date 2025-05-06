@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saurabh | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <h1>Hi, I'm <span>Saurabh Pun Magar</span></h1>
+        <p>Software Engineer | JAVA</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img src="image.jpg" alt="Your Name" />
+          <p>
+            I'm a passionate Java and Spring Boot developer with a strong focus
+            on backend development and building scalable, efficient RESTful
+            APIs. With a solid foundation in computer science and hands-on
+            experience in tools like React, JUnit, GitHub, and Docker, I love
+            turning complex problems into clean, maintainable code. I
+            transitioned from a computer instructor role to follow my true
+            passion - Software Development - and I’m always eager to learn new
+            technologies and contribute to impactful projects.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+          <!-- Project cards will go here -->
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <!-- Skill bars or icons will go here -->
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="timeline-container">
+          <!-- Experience Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-date">Feb 2024 - July 2024</div>
+            <div class="timeline-content">
+              <div class="timeline-marker"></div>
+
+              <h3>Software Developer Intern</h3>
+              <h4>E-Prabidhi Pvt. Ltd., Putalisadak, Kathmandu</h4>
+              <ul>
+                <li>
+                  Developed and tested RESTful APIs using Java and Spring Boot.
+                </li>
+                <li>
+                  Collaborated with the frontend team to integrate APIs with
+                  Angular components.
+                </li>
+                <li>Wrote unit tests using JUnit to ensure code quality.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-date">July 2020 - Jan 2024</div>
+            <div class="timeline-content">
+              <div class="timeline-marker"></div>
+              <h3>Computer Instructor</h3>
+              <h4>Mandavi Secondary School, Pyuthan, Nepal</h4>
+              <ul>
+                <li>
+                    Taught Java programming, database management, and problem
+                    solving techniques.
+                </li>
+                <li>
+                    Developed and implemented a Java-based student management 
+                   system for internal use.
+                </li>
+                <li>
+                    Conducted code reviews, debugging sessions, and hands-on project
+                    based learning.
+                </li>
+                <li>
+                    Mentored students in software development best practices.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="timeline-container">
+          <!-- Education Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2015 - 2019</div>
+            <div class="timeline-content">
+              <div class="timeline-marker"></div>
+              <h3>
+                Bachelor of Technology in Computer Science & Engineering (B.
+                Tech)
+              </h3>
+              <h4>
+                Global Group of Institutes, Punjab Technical University, Punjab,
+                India
+              </h4>
+              <p>Specialized in Computer Engineering. Graduated with Honors.</p>
+              <ul class="education-details">
+                <li>GPA: 6.73/10</li>
+                <li>
+                  Relevant Coursework: Software Engineering, Data Structures &
+                  Algorithms, Computer Architecture, System Design, Operating
+                  System, etc
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2013 - 2015</div>
+            <div class="timeline-content">
+              <div class="timeline-marker"></div>
+              <h3>Intermediate in Science (I. Sc)</h3>
+              <h4>Holyland Higher Secondary School, Nepalgunj, Banke, Nepal</h4>
+              <ul class="education-skills">
+                <li>Percentage: 61.8 %</li>
+                <li>Focus on Mathematics and Science</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Get In Touch</h2>
+        <form id="contact-form" action="https://formsubmit.co/er100rabh55@gmail.com" method="POST" onsubmit="handleRedirect(event)">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+
+          <input type="hidden" name="_subject" value="New message from portfolio" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="success-message" style="display:none; color: green; font-size: 16px; margin-top: 20px;">
+            Message sent successfully! You will be redirected shortly.
+          </div>
+      </section>
+    </main>
+
+    <button class="theme-toggle" id="theme-toggle">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <footer>
+      <div class="social-links">
+        <a href="https://github.com/saurabh55-dev" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/saurabh-magar" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://facebook.com/saurabh.pun.5" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 Saurabh All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function handleRedirect(event) {
+          event.preventDefault();
+          const form = event.target;
+    
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form)
+          })
+          .then(response => {
+            if (response.ok) {
+              document.getElementById('success-message').style.display = 'block';
+              setTimeout(function() {
+                window.location.href = 'http://127.0.0.1:5500/index.html'; 
+              }, 3000);
+            } else {
+              alert('Form submission failed. Please try again.');
+            }
+          })
+          .catch(error => {
+            alert('An error occurred. Please try again.');
+          });
+        }
+      </script>
+  </body>
+</html>
